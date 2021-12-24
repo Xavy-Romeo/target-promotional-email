@@ -1,59 +1,57 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
 
-// Body Styles 
 body,
 html, 
 .body {
-  background: #f3f3f3 !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container.header {
-  background: #f3f3f3;
-}
-
-.body-drip {
-  border-top: 8px solid #663399;
-}
-
-// Full Width Headers
 .header {
-  background: #8a8a8a;
-}
-
-.header .columns {
-  padding-bottom: 0;
-}
-
-.header p {
-  color: #fff;
-  padding-top: 15px;
-}
-
-.header .wrapper-inner {
-  padding: 20px;
-}
-
-.header .container {
-  background: transparent;
-}
-
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
-}
-
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
-
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
-
-.wrapper.secondary {
-  background: #f3f3f3;
+  .header-logo-row {
+    img {
+      width: 80px;
+      margin: 0 auto;
+    }
+  }
+  .header-menu-row {
+    background: #f7f7f7;
+    background-color: #f7f7f7;
+    height: 44px;
+    margin-bottom: $margin-bottom;
+    .columns {
+      vertical-align: middle;
+      & > table > tbody > tr > th {
+        text-align: center;
+        a {
+          font-size: 14px;
+          font-weight: normal;
+          color: $text-dark;
+          margin: 0 20px;
+          letter-spacing: .2px;
+        }
+      }
+    }
+     
+  }
+  .subheader-row {
+    background: $dark-red;
+    background-color: $dark-red;
+    height: 102px;
+    margin-bottom: $margin-bottom;
+    .columns {
+      vertical-align: middle;
+      h4, p {
+        text-align: center;
+        color: $white;
+        font-weight: 400;
+        span {
+          font-weight: 700;
+        }
+      }
+      h4 {
+        font-size: 22px;
+      }
+    }
+  }
 }
