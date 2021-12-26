@@ -46,7 +46,7 @@ html,
         color: $white;
         font-weight: 400;
         span {
-          font-weight: 700;
+          font-weight: 500;
         }
       }
       h4 {
@@ -99,6 +99,7 @@ html,
           text-align: center;
           a {
             background: $dark-red;
+            background-color: $dark-red;
             color: $white;
             padding: 10px 15px;
             border-radius: 3px;
@@ -124,10 +125,73 @@ html,
             text-align: center;
             font-size: 13px;
             color: $text-dark;
-            padding: 10px 0;
+            padding: 10px 0 !important;
           }
         }
       }
+    }
+  }
+}
+
+.sweaters-row {
+  .sweater-info-row {
+    background: $dark-blue;
+    background-color: $dark-blue;
+    height: 76px;
+    margin-bottom: 8px;
+    .columns {
+      vertical-align: middle;
+      h4, p {
+        text-align: center;
+        color: $white;
+        font-weight: 400;
+        span {
+          font-weight: 500;
+        }
+      }
+      h4 {
+        font-size: 22px;
+      }
+    }
+  }
+  .sweater-pic-row {
+    background: $light-blue;
+    background-color: $light-blue;
+    height: 316px;
+    .sweaters-btn-column {
+      position: absolute;
+      width: 168px !important;
+      bottom: 8px;
+      left: 216px;
+      a {
+        background: $dark-blue;
+        background-color: $dark-blue;
+        color: $white;
+        padding: 10px 15px;
+        border-radius: 3px;
+        height: 40px;
+        font-size: 16px;
+      }
+    }
+    .img-sweater2-absolute{
+      position: absolute;
+      top: -12px !important;
+      left: 20.9%;
+      width: 52% !important;
+    }
+
+    .img-sweater1-column,
+    .img-sweater3-column {
+      width: 25% !important;
+      img {
+        margin: 0 auto;
+        height: 300px;
+      }
+    }
+    .img-sweater2-column {
+      background: #5da5dd;
+      background-color: #5da5dd;
+      border: 25px solid #245c8d;
     }
   }
 }
