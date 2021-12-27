@@ -195,3 +195,108 @@ html,
     }
   }
 }
+
+.iwatch-row {
+  .iwatch-info-row {
+    background: $dark-red;
+    background-color: $dark-red;
+    height: 76px;
+    margin: 8px 0;
+    .columns {
+      vertical-align: middle;
+      h4, p {
+        text-align: center;
+        color: $white;
+        font-weight: 400;
+        span {
+          font-weight: 500;
+        }
+      }
+      h4 {
+        font-size: 22px;
+      }
+    }
+  }
+  .iwatch-pic-row {
+    height: 316px;
+    .iwatch-btn-column {
+      position: absolute;
+      width: 136px !important;
+      bottom: 16px;
+      left: 232px;
+      z-index: 99999999999999999999;
+      a {
+        margin: 0 auto;
+        background: $dark-red;
+        background-color: $dark-red;
+        color: $white;
+        padding: 10px 25px;
+        border-radius: 3px;
+        height: 40px;
+        font-size: 16px;
+      }
+    }
+    .iwatch-main-column{
+      background: #be001c;
+      background-color: #be001c;
+      & > table {
+        height: 100%;
+      }
+      .iwatch-target-column{
+        background: #be001c;
+        background-color: #be001c;
+        h6 {
+          color: $white;
+          font-weight: 500;
+          margin: 120px 0 0 20px;
+        }
+        h1 {
+          color: $white;
+          font-size: 46px;
+          font-weight: 500;
+          line-height: .9;
+          display: inline-block;
+        }
+        img {
+          height: 42px;
+          display: inline-block;
+          margin: 0 -5px -5px 20px;
+        }
+      }
+      .iwatch-pic-column {
+        height: 100%;
+        background: #ed002e !important;
+        background-color: #ed002e;
+        background-size: cover;
+        clip-path: circle(900px at 900px 50%);
+        & > table {
+          height: 100%;
+        }
+        .air-left {
+          height: 120px;
+          display: inline-block;
+          margin: 0 15px 120px 30px !important;
+          transform: rotate(15deg);
+        }
+        .i-watch {
+          display: inline-block;
+          height: 250px;
+          margin-top: 30px;
+        }
+        .air-right {
+          height: 120px;
+          display: inline-block;
+          margin: 120px 30px 0 15px !important;
+          transform: rotate(345deg);
+        }
+      }
+    }
+    
+  }
+}
+
+.place-holder {
+  background: black;
+  margin-top: 20px;
+  height: 300px;
+}
