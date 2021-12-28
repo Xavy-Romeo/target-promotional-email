@@ -483,7 +483,6 @@ html,
     background: #f7f7f7;
     background-color: #f7f7f7;
     height: 50px;
-    
     .columns {
       vertical-align: middle;
       a {
@@ -497,8 +496,42 @@ html,
   }
 }
 
-.place-holder {
-  background: black;
-  margin-top: 20px;
-  height: 300px;
+.fine-print-row {
+  table-layout: fixed;
+  width: 600px !important;
+  margin: 20px;
+  h6{
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4144;
+  }
+  p {
+    font-size: 10px;
+    color: #7a7a7a;
+    hyphens: none;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.footer-bottom {
+  background: #f7f7f7;
+  background-color: #f7f7f7;
+  height: 110px;
+  margin-bottom: 200px;
+  img {
+    width: 60px;
+    margin: 20px auto -10px auto;
+  }
+  p {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 900;
+    color: #3c4144;
+    span {
+      color: #ce293c;
+    }
+  }
+
 }
