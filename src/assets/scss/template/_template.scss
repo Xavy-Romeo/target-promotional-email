@@ -441,7 +441,59 @@ html,
         font-size: 22px;
       }
     }
+  }
+}
+
+.footer-menu-row {
+  .offer-row {
+    background: #c5000b;
+    background-color: #c5000b;
+    margin-top: 8px;
+    height: 54px;
+    .columns {
+      vertical-align: middle;
+      &.first {
+        & > table {
+          margin-left: 12px;
+        }
+        p {
+          font-size: 13px;
+          color: $white;
+          span{
+            color: $white;
+            font-weight: 500;
+          }
+        }
+      }
+      &.last{
+        & > table > tbody > tr > th {
+          text-align: right;
+        }
+        a {
+          border: 2px solid $white;
+          color: $white;
+          padding: 8px 5px;
+          font-size: 13px;
+          margin-right: 12px;
+        }
+      }
+    } 
+  }
+  .footer-menu {
+    background: #f7f7f7;
+    background-color: #f7f7f7;
+    height: 50px;
     
+    .columns {
+      vertical-align: middle;
+      a {
+        font-size: 14px;
+        font-weight: normal;
+        color: $text-dark;
+        margin: 0 13px;
+        letter-spacing: .2px;
+      }
+    }
   }
 }
 
