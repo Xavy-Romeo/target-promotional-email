@@ -1,5 +1,6 @@
 {
   "name": "foundation-emails-template",
+  "homepage": "https://xavy-romeo.github.io/target-promotional-email/",
   "version": "1.0.0",
   "description": "Basic template for a Foundation for Emails project.",
   "repository": "zurb/foundation-emails-template",
@@ -9,7 +10,8 @@
     "build": "gulp --production",
     "zip": "gulp zip --production",
     "litmus": "gulp litmus --production",
-    "mail": "gulp mail --production"
+    "mail": "gulp mail --production",
+    "deploy": "gh-pages -d build"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
