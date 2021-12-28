@@ -29,6 +29,10 @@ html,
           color: $text-dark;
           margin: 0 20px;
           letter-spacing: .2px;
+          @media screen and (max-width: 599px) {
+            font-size: 24px;
+            
+          }
         }
       }
     }
@@ -45,12 +49,26 @@ html,
         text-align: center;
         color: $white;
         font-weight: 400;
+        @media screen and (max-width: 599px) {
+          text-align: left;
+          padding-left: 20px;
+        }
         span {
           font-weight: 500;
         }
       }
       h4 {
         font-size: 22px;
+        @media screen and (max-width: 599px) {
+          font-size: 45px;
+          padding-top: 10px;
+        }
+      }
+      p {
+        @media screen and (max-width: 599px) {
+          font-size: 25px;
+          padding-bottom: 20px;
+        }
       }
     }
   }
@@ -65,8 +83,6 @@ html,
     background: linear-gradient(to bottom right, $red, #7f0029);
     background-color: linear-gradient(to bottom right, $red, #7f0029);
     position: relative;
-  }
-  .days-remaining-column{
     .circle-row {
       position: absolute;
       height: 100%;
@@ -74,6 +90,10 @@ html,
         vertical-align: middle;
         width: 85%;
         margin: 11% auto;
+        @media screen and (max-width: 599px) {
+          width: 70%;
+          margin: 5% auto;
+        }
       }
     }
     .days-row {
@@ -84,12 +104,20 @@ html,
         font-weight: 700;
         line-height: .8;
         color: $white;
+        @media screen and (max-width: 599px) {
+          font-size: 90px;
+          margin-top: 23%
+        }
       }
       h2 {
         text-align: center;
         font-size: 33px;
         font-weight: 500;
         color: $white;
+        @media screen and (max-width: 599px) {
+          font-size: 50px;
+          margin-bottom: 30px;
+        }
       }
     }
     .start-shopping-btn-row {
@@ -105,20 +133,45 @@ html,
             border-radius: 3px;
             height: 40px;
             font-size: 16px;
+            @media screen and (max-width: 599px) {
+              font-size: 30px;
+              padding: 15px 20px;
+            }
           }
+        }
+        @media screen and (max-width: 599px) {
+          margin-bottom: 30px;
         }
       } 
     }
   }
   .days-categories-column {
+    @media screen and (max-width: 599px) {
+      margin-top: 8px;
+      border-collapse: separate;
+      border-spacing: 8px;
+    }
     .row {
       border-collapse: separate;
       border-spacing: 8px;
       min-width: calc(100% + 15px) !important;
       margin: -8px;
+      @media screen and (max-width: 599px) {
+        min-width: calc(100% + 7px) !important;
+      }
       .days-category {
         background: linear-gradient(#e49c9d, #fde0d7);
         background-color: linear-gradient(#e49c9d, #fde0d7);
+        &.first {
+          @media screen and (max-width: 599px) {
+            margin-right: 8px;
+          }
+        }
+        &.last {
+          @media screen and (max-width: 599px) {
+            margin-right: -8px;
+          }
+        }
         a {
           p {
             background: #fde0d7;
@@ -126,6 +179,9 @@ html,
             font-size: 13px;
             color: $text-dark;
             padding: 10px 0 !important;
+            @media screen and (max-width: 599px) {
+              font-size: 25px;
+            }
           }
         }
       }
@@ -138,19 +194,33 @@ html,
     background: $dark-blue;
     background-color: $dark-blue;
     height: 76px;
-    margin-bottom: 8px;
+    margin-bottom: 8px;    
     .columns {
       vertical-align: middle;
       h4, p {
         text-align: center;
         color: $white;
         font-weight: 400;
+        @media screen and (max-width: 599px) {
+          text-align: left;
+          padding-left: 20px;
+        }
         span {
           font-weight: 500;
         }
       }
       h4 {
         font-size: 22px;
+        @media screen and (max-width: 599px) {
+          font-size: 45px;
+          padding-top: 10px;
+        }
+      }
+      p {
+        @media screen and (max-width: 599px) {
+          font-size: 25px;
+          padding-bottom: 20px;
+        }
       }
     }
   }
@@ -162,7 +232,12 @@ html,
       position: absolute;
       width: 168px !important;
       bottom: 8px;
-      left: 216px;
+      // left: 216px;
+      @media screen and (max-width: 599px) {
+        width: 294px !important;
+        left: 160px;
+        margin-bottom: 8px;
+      }
       a {
         background: $dark-blue;
         background-color: $dark-blue;
@@ -171,6 +246,10 @@ html,
         border-radius: 3px;
         height: 40px;
         font-size: 16px;
+        @media screen and (max-width: 599px) {
+          font-size: 30px;
+          padding: 15px 20px;
+        }
       }
     }
     .img-sweater2-absolute{
@@ -208,12 +287,26 @@ html,
         text-align: center;
         color: $white;
         font-weight: 400;
+        @media screen and (max-width: 599px) {
+          text-align: left;
+          padding-left: 20px;
+        }
         span {
           font-weight: 500;
         }
       }
       h4 {
         font-size: 22px;
+        @media screen and (max-width: 599px) {
+          font-size: 45px;
+          padding-top: 10px;
+        }
+      }
+      p {
+        @media screen and (max-width: 599px) {
+          font-size: 25px;
+          padding-bottom: 20px;
+        }
       }
     }
   }
@@ -225,6 +318,10 @@ html,
       bottom: 16px;
       left: 232px;
       z-index: 99999999999999999999;
+      @media screen and (max-width: 599px) {
+        width: 200px !important;
+        left: 200px;
+      }
       a {
         margin: 0 auto;
         background: $dark-red;
@@ -234,6 +331,10 @@ html,
         border-radius: 3px;
         height: 40px;
         font-size: 16px;
+        @media screen and (max-width: 599px) {
+          font-size: 30px;
+          padding: 15px 20px;
+        }
       }
     }
     .iwatch-main-column{
@@ -249,6 +350,10 @@ html,
           color: $white;
           font-weight: 500;
           margin: 120px 0 0 20px;
+          @media screen and (max-width: 599px) {
+            margin: 20px 0 20px 224px;
+            font-size: 28px;
+          }
         }
         h1 {
           color: $white;
@@ -256,11 +361,17 @@ html,
           font-weight: 500;
           line-height: .9;
           display: inline-block;
+          @media screen and (max-width: 599px) {
+            margin-bottom: 20px;
+          }
         }
         img {
           height: 42px;
           display: inline-block;
           margin: 0 -5px -5px 20px;
+          @media screen and (max-width: 599px) {
+            margin: 0 -5px -5px 220px;
+          }
         }
       }
       .iwatch-pic-column {
@@ -269,6 +380,9 @@ html,
         background-color: #ed002e;
         background-size: cover;
         clip-path: circle(900px at 900px 50%);
+        @media screen and (max-width: 599px) {
+          clip-path: none;
+        }
         & > table {
           height: 100%;
         }
@@ -277,17 +391,28 @@ html,
           display: inline-block;
           margin: 0 15px 120px 30px !important;
           transform: rotate(15deg);
+          @media screen and (max-width: 599px) {
+            margin-left: 134px !important;
+            margin-bottom: 120px !important;
+          }
         }
         .i-watch {
           display: inline-block;
           height: 250px;
           margin-top: 30px;
+          @media screen and (max-width: 599px) {
+            margin-top: 10px !important;
+            margin-bottom: 80px !important;
+          }
         }
         .air-right {
           height: 120px;
           display: inline-block;
           margin: 120px 30px 0 15px !important;
           transform: rotate(345deg);
+          @media screen and (max-width: 599px) {
+            margin-bottom: 120px !important;
+          }
         }
       }
     }
@@ -307,12 +432,26 @@ html,
         text-align: center;
         color: $white;
         font-weight: 400;
+        @media screen and (max-width: 599px) {
+          text-align: left;
+          padding-left: 20px;
+        }
         span {
           font-weight: 500;
         }
       }
       h4 {
         font-size: 22px;
+        @media screen and (max-width: 599px) {
+          font-size: 45px;
+          padding-top: 10px;
+        }
+      }
+      p {
+        @media screen and (max-width: 599px) {
+          font-size: 25px;
+          padding-bottom: 20px;
+        }
       }
     }
   }
@@ -325,25 +464,40 @@ html,
     .toys-column {
       background: #3ea499;
       background-color: #3ea499;
+      @media screen and (max-width: 599px) {
+        margin-bottom: 8px !important;
+        height: 450px !important;
+      }
       .pickup {
         height: 220px;
         display: inline-block;
         margin: 20px 0 0 20px !important;
         width: 50%;
         z-index: 1;
+        @media screen and (max-width: 599px) {
+          height: 400px;
+        }
       }
       .battle-cat {
         height: 220px;
         display: inline-block;
         width: 60%;
-        margin-left: -60px;
+        margin-left: -60px !important;
         transform: translateY(50px);
         z-index: 2;
+        @media screen and (max-width: 599px) {
+          margin-left: -100px !important;
+          transform: translateY(0);
+          height: 300px;
+        }
       }
       .toys-btn-row {
         height: 71px;
         & > tbody > tr > th > table {
           margin-top: 31px;
+          @media screen and (max-width: 599px) {
+            margin-top: -38px;
+          }
           & > tbody > tr > th {
             text-align: center;
           }
@@ -358,28 +512,45 @@ html,
           height: 40px;
           font-size: 16px;
           z-index: 3;
+          @media screen and (max-width: 599px) {
+            font-size: 30px;
+            padding: 15px 80px;
+          }
         }
       }
     }
     .video-game-column {
       background: #3ea499;
       background-color: #3ea499;
+      @media screen and (max-width: 599px) {
+        height: 450px !important;
+      }
       .gta {
         height: 220px;
         display: inline-block;
         margin: 20px 0 0 20px !important;
         transform: rotate(355deg);
+        @media screen and (max-width: 599px) {
+          margin-left: 140px !important;
+          height: 300px;
+        }
       }
       .super-smash {
         height: 220px;
         display: inline-block;
         margin-left: -80px;
         transform: rotate3d(1,-1,1,25deg) translateY(30px);
+        @media screen and (max-width: 599px) {
+          height: 300px;
+        }
       }
       .toys-btn-row {
         height: 71px;
         & > tbody > tr > th > table {
           margin-top: 31px;
+          @media screen and (max-width: 599px) {
+            margin-top: 60px;
+          }
           & > tbody > tr > th {
             text-align: center;
           }
@@ -394,6 +565,10 @@ html,
           height: 40px;
           font-size: 16px;
           z-index: 3;
+          @media screen and (max-width: 599px) {
+            font-size: 30px;
+            padding: 15px 20px;
+          }
         }
       }
     }
@@ -413,9 +588,15 @@ html,
         color: $white;
         font-weight: 400;
         font-size: 22px;
+        @media screen and (max-width: 599px) {
+          text-align: left;
+          padding-left: 20px;
+          font-size: 45px;
+          padding-top: 10px;
+        }
         span {
           font-weight: 500;
-        }        
+        }
       }
     }
   }
@@ -427,7 +608,7 @@ html,
     .columns {
       background: linear-gradient(90deg, rgba(87,196,183,1) 0%, rgba(31,117,112,1) 100%);
       background-color: linear-gradient(90deg, rgba(87,196,183,1) 0%, rgba(31,117,112,1) 100%);
-      height: 154px;
+      height: 154px !important;
       & > table {
         height: 100%;
         & > tbody > tr > th {
@@ -439,6 +620,9 @@ html,
         color: $white;
         font-weight: 600;
         font-size: 22px;
+        @media screen and (max-width: 599px) {
+          font-size: 36px;
+        }
       }
     }
   }
@@ -455,10 +639,18 @@ html,
       &.first {
         & > table {
           margin-left: 12px;
+          @media screen and (max-width: 599px) {
+            margin-left: 0;
+            margin-bottom: 15px;
+          }
         }
         p {
           font-size: 13px;
           color: $white;
+          @media screen and (max-width: 599px) {
+            font-size: 20px;
+            text-align: center;
+          }
           span{
             color: $white;
             font-weight: 500;
@@ -468,6 +660,9 @@ html,
       &.last{
         & > table > tbody > tr > th {
           text-align: right;
+          @media screen and (max-width: 599px) {
+            text-align: center;
+          }
         }
         a {
           border: 2px solid $white;
@@ -475,6 +670,10 @@ html,
           padding: 8px 5px;
           font-size: 13px;
           margin-right: 12px;
+          @media screen and (max-width: 599px) {
+            font-size: 20px;
+            margin-right: 0;
+          }
         }
       }
     } 
@@ -491,6 +690,11 @@ html,
         color: $text-dark;
         margin: 0 13px;
         letter-spacing: .2px;
+        @media screen and (max-width: 599px) {
+          text-align: center;
+          margin: 0 260px !important;
+          font-size: 26px;
+        }
       }
     }
   }
@@ -504,11 +708,17 @@ html,
     font-size: 14px;
     font-weight: 500;
     color: #3c4144;
+    @media screen and (max-width: 599px) {
+      font-size: 25px;
+    }
   }
   p {
     font-size: 10px;
     color: #7a7a7a;
     hyphens: none;
+    @media screen and (max-width: 599px) {
+      font-size: 18px;
+    }
     span {
       font-weight: 700;
     }
@@ -520,15 +730,24 @@ html,
   background-color: #f7f7f7;
   height: 110px;
   margin-bottom: 200px;
+  @media screen and (max-width: 599px) {
+    margin-bottom: 50px;
+  }
   img {
-    width: 60px;
+    width: 60px !important;
     margin: 20px auto -10px auto;
+    @media screen and (max-width: 599px) {
+      width: 100px !important;
+    }
   }
   p {
     text-align: center;
     font-size: 10px;
     font-weight: 900;
     color: #3c4144;
+    @media screen and (max-width: 599px) {
+      font-size: 16px;
+    }
     span {
       color: #ce293c;
     }
