@@ -11,7 +11,7 @@
     "zip": "gulp zip --production",
     "litmus": "gulp litmus --production",
     "mail": "gulp mail --production",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
